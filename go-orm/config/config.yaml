@@ -1,0 +1,3 @@
+sqlite:
+  name: sqlite3
+  db: gee.db
