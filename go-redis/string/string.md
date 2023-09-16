@@ -48,8 +48,8 @@ type sds64 struct {}
 // 动态扩容字符串、内存预申请   
 func (s *sds8) dynamicExpand(str string) {
     if str.size + sds8.len > sds8.alloc {
-        if str.size < 1024KB {
-
+        if str.size < 1024 * 1024 * 8 {
+                
         } else {
 
         }
